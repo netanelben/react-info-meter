@@ -1,6 +1,8 @@
 # react-info-meter
 
-A tiny react informative meter component with labels
+🌡️ A tiny react informative meter component with labels
+
+<img src="./docs/example.png"/>
 
 ## Installation
 
@@ -13,14 +15,8 @@ yarn add react-info-meter
 ```JSX
 import Meter from 'react-info-meter';
 
-<Meter value={50}/>
-```
-
-```JSX
-import Meter from 'react-info-meter';
-
 <Meter
-    value={20}
+    value={0}
     title="Median Home Value"
     legend={["Lowest", "Mild", "Highest"]}
 />
