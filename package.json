@@ -1,6 +1,6 @@
 {
   "name": "react-info-meter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny react info meter component",
   "main": "dist/index.js",
   "scripts": {
