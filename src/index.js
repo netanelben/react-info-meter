@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const Meter = ({ value = 0, title, legend = [] }) => {
+const Meter = ({ value = 0, title, legend = [], baseColor, meterColor = {} }) => {
     const margins =
         value === 0
             ? "0"
@@ -9,15 +9,26 @@ const Meter = ({ value = 0, title, legend = [] }) => {
                 ? `calc(${value}% - 46px)`
                 : `calc(${value}% - 92px)`;
 
-    const style = {
+    const baseStyle = {
+        backgroundColor: baseColor,
+    };
+
+    const meterStyle = {
         marginLeft: margins,
+        backgroundColor: meterColor.outer,
+    };
+
+    const innerStyle = {
+        backgroundColor: meterColor.inner,
     };
 
     return (
         <div className="react-info-meter">
             <div className="title">{title}</div>
-            <div className="meter-bar">
-                <span style={style} />
+            <div className="meter-bar" style={baseStyle}>
+                <span style={meterStyle}>
+                    <span className="outer" style={innerStyle}/>
+                </span>
             </div>
 
             {legend &&

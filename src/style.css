@@ -1,8 +1,8 @@
 .react-info-meter .meter-bar {
+  background-color: rgba(102, 204, 255, 0.2);
   width: 100%;
   height: 12px;
   border-radius: 8px;
-  background-color: rgba(102, 204, 255, 0.2);
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
@@ -23,10 +23,9 @@
   position: absolute;
   top: 0;
   z-index: 1;
-
 }
 
-.react-info-meter .meter-bar span:after {
+.react-info-meter .meter-bar span.outer {
   content: "";
   height: 12px;
   border-radius: 8px;
