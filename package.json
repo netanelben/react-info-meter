@@ -4,6 +4,7 @@
   "description": "Tiny react info meter component",
   "main": "dist/index.js",
   "scripts": {
+    "start": "npm run storybook",
     "storybook": "start-storybook -p 6006",
     "build": "webpack --config ./webpack.config.js"
   },
@@ -14,12 +15,16 @@
   "keywords": [
     "react",
     "component",
+    "ui",
+    "widget",
+    "progress",
     "progress bar",
     "progress meter",
     "progress indicator",
     "bar",
     "meter",
-    "indicator"
+    "indicator",
+    "indication"
   ],
   "author": "Nate Ben",
   "license": "CC0-1.0",
@@ -45,5 +50,6 @@
     "terser-webpack-plugin": "^3.0.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
