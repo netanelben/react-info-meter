@@ -2,7 +2,7 @@
 
 🌡️ A tiny react informative meter component with labels
 
-<img src="./docs/example.jpeg" width="50%"/>
+<img src="./docs/example.png" width="50%"/>
 
 ## Installation
 
